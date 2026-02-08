@@ -1,0 +1,22 @@
+{
+  "extends": "@react-native/typescript-config/tsconfig.json",
+  "compilerOptions": {
+    "moduleResolution": "bundler",
+    "jsx": "react-native",
+    "allowJs": true,
+    "esModuleInterop": true,
+    "target": "esnext",
+    "lib": ["ES2021", "ES2019", "ES7", "ES6", "DOM"],
+    "noEmit": true,
+    "isolatedModules": true,
+    "strict": true,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": false,
+    "resolveJsonModule": true
+  },
+  "include": ["src/**/*", "declarations.d.ts"]
+}
